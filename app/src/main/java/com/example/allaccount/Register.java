@@ -72,7 +72,7 @@ public class Register extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
-//        View button এ ক্লিক করলে AllUserActivity-তে চলে যাবে সেখানে ListView এর মাধ্যমে রেজিস্টারকৃত অ্যাকাউন্ট গুলো শোহবে  
+//        View button এ ক্লিক করলে AllUserActivity-তে চলে যাবে সেখানে ListView এর মাধ্যমে রেজিস্টারকৃত অ্যাকাউন্ট গুলো শোহবে
         viewbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -130,6 +130,8 @@ public class Register extends AppCompatActivity {
                             Toast.makeText(Register.this,"Register Successful",Toast.LENGTH_SHORT).show();
 
                             FirebaseUser firebaseUser =firebaseAuth.getCurrentUser();
+                            
+//                            ReadWriteRegisterUserDetails এর মাধ্যমে রেজিস্টারকৃত ব্যক্তির নাম ইমেইল ডেট এবং পাসওয়ার্ড Realtime database এ জমা রাখা হবে
                             ReadWriteRegisterUserDetails WriteRegisterUserDetails =new ReadWriteRegisterUserDetails(nameRegister,emailRegister,dateRegister,passwordRegister);
                             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Register Data");
                             databaseReference.child(firebaseUser.getUid()).setValue(WriteRegisterUserDetails).addOnCompleteListener(new OnCompleteListener<Void>() {
