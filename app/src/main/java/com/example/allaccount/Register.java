@@ -79,7 +79,8 @@ public class Register extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        
+
+//        রেজিস্টার বাটনে ক্লিক করলে কন্ডিশন চেক করে রেজিস্টার করবে
         registerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
