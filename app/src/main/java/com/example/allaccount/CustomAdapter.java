@@ -46,6 +46,7 @@ public class CustomAdapter extends ArrayAdapter<ReadWriteRegisterUserDetails> {
                 context.startActivity(intent);
             }
         });
+//        click editButton show listView login Current User Show Current Value go login Activity
         Button editButton = view.findViewById(R.id.editButton_ID);
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
