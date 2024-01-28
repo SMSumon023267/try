@@ -17,10 +17,7 @@
             android:layout_height="wrap_content"
             android:divider="@color/black"
             android:dividerHeight="1dp"
-
             />
-
-
     </LinearLayout>
     <ProgressBar
         android:id="@+id/progressBar_AllUserActivity_ID"
