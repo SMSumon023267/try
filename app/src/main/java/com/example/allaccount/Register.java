@@ -72,6 +72,7 @@ public class Register extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
+//        View button এ ক্লিক করলে AllUserActivity-তে চলে যাবে সেখানে ListView এর মাধ্যমে রেজিস্টারকৃত অ্যাকাউন্ট গুলো শোহবে  
         viewbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -149,10 +150,6 @@ public class Register extends AppCompatActivity {
                         progressBar.setVisibility(View.GONE);
                     }
                 });
-
-
-
-
             }
         });
         
