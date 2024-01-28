@@ -19,13 +19,13 @@ public class CustomAdapter extends ArrayAdapter<ReadWriteRegisterUserDetails> {
     private Activity context;
     private List<ReadWriteRegisterUserDetails>readWriteRegisterUserDetailsList;
 
+
     public CustomAdapter(Activity context,List<ReadWriteRegisterUserDetails> readWriteRegisterUserDetailsList) {
         super(context, R.layout.sample_layout, readWriteRegisterUserDetailsList);
         this.context = context;
         this.readWriteRegisterUserDetailsList = readWriteRegisterUserDetailsList;
     }
-
-
+    //    CustomAdapter এর মাধ্যমে রিয়েল টাইম ডাটাবেজ থেকে ডাটা গুলো রিসিভ করেsample_layout এর মাধ্যমে প্রদর্শন
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {

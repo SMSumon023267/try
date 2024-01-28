@@ -33,7 +33,9 @@ public class AllUserActivity extends AppCompatActivity {
 
         databaseReference = FirebaseDatabase.getInstance().getReference("Register Data");
 
+
         readWriteRegisterUserDetailsList = new ArrayList<>();
+
         customAdapter = new CustomAdapter(AllUserActivity.this,readWriteRegisterUserDetailsList);
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar_AllUserActivity_ID);
