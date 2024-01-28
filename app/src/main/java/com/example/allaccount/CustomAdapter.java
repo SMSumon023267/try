@@ -37,7 +37,7 @@ public class CustomAdapter extends ArrayAdapter<ReadWriteRegisterUserDetails> {
         TextView t1 = view.findViewById(R.id.nameSampleLayoutTextView_ID);
         TextView t2 = view.findViewById(R.id.dateSampleLayoutTextView_ID);
 
-
+        //click ViewButton show User Current Value
         Button viewButton = view.findViewById(R.id.viewButton_ID);
         viewButton.setOnClickListener(new View.OnClickListener() {
             @Override
